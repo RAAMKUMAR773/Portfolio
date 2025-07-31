@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Importing Devicon Library for Programming Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.8;
+            font-size: 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            padding-bottom: 8px;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 18px;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            color: #ffcc66;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 50px;
+        }
+
+        #about {
+            background-color: #eef7ff;
+        }
+
+        #skills {
+            background-color: #fdf5e6;
+            text-align: center;
+        }
+
+        #education {
+            background-color: #eef7ff;
+        }
+
+        #details {
+            background-color: #e8f6f3;
+        }
+
+        /* Headings */
+        h2 {
+            font-size: 32px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        p, li {
+            font-size: 20px;
+        }
+
+        /* About Me Section Layout */
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        /* Skills Icons */
+        .skills-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .skills-icons i {
+            font-size: 70px;
+            color: #444;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .skills-icons i:hover {
+            transform: scale(1.2);
+            color: #ff6600;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: square;
+            padding-left: 30px;
+        }
+
+        /* Contact Links */
+        a {
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Personal Portfolio</h1>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#details">Details</a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="padding-top: 120px;">
+
+        <!-- About Me Section -->
+        <div id="about" class="section">
+            <div class="about-container">
+                
+                <!-- About Text on Left -->
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello, I'm <strong>RAAM KUMAR K R</strong>, a passionate and dedicated web developer with a strong love for creating clean, user-friendly, and visually appealing websites. 
+                        My goal is to craft seamless digital experiences that make technology accessible and enjoyable for everyone.
+                    </p>
+                    <p>
+                        Over the years, I have honed my skills in both front-end and back-end development, allowing me to design and build complete web applications from scratch. 
+                        I enjoy collaborating with teams, learning new tools, and staying updated with the latest trends in web development. 
+                        My portfolio showcases my growth as a developer and reflects my dedication to producing high-quality work.
+                    </p>
+                </div>
+
+                <!-- Profile Image on Right -->
+                <img src="Raam Standard image.jpg" alt="Your Profile Image" class="about-img">
+                
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section">
+            <h2>My Skills</h2>
+            <div class="skills-icons">
+                <i class="devicon-python-plain colored"></i>
+                <i class="devicon-java-plain colored"></i>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-c-plain colored"></i>
+            </div>
+            <p> These are the skills I learned and continue to improve on my journey as a developer.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>2013 - 2021:</strong> Primary & Secondary School, LITTLE FLOWER MATRICULATION HIGHER SECONDARY SCHOOL – <em>Scored 96%</em></p>
+            <p><strong>2021 - 2023:</strong> Higher Secondary, BALA BARATHI MATRICULATION HIGHER SECONDARY SCHOOL – <em>Scored 90%</em></p>
+            <p><strong>2023 - 2027:</strong> Bachelor Of Technology: AI&DS, Bannari Amman Institute Of Technology – <em>Scored 85%</em></p>
+            <p><strong>Certifications:</strong> Full-Stack Web Development, Python for Beginners, Advanced Java Programming.</p>
+        </div>
+
+        <!-- Details Section -->
+        <div id="details" class="section">
+            <h2>Details</h2>
+            <p><strong>Email:</strong> <a href="mailto:youremail@example.com">raamkumarraam28@gmail.com</a></p>
+            <p><strong>Phone:</strong> +91 7010861104</p>
+            <p><strong>Leetcode:</strong> <a href="#">//leetcode.com/u/raamkumar07/</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#">www.linkedin.com/in/raamkumar-kr/</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
